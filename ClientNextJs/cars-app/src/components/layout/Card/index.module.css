@@ -1,0 +1,26 @@
+@keyframes smooth-appear {
+    from {
+        top: 20px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.card {
+    background-color: #f0f6fd;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 5px #dbecfd;
+    padding: 10px;
+    animation: smooth-appear 0.5s ease forwards;
+    position: relative;
+    animation-fill-mode: none;
+}
+
+.card:hover {
+    box-shadow: 0 5px 10px #bfdefb;
+}

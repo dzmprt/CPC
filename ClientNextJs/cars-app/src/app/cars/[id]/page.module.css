@@ -1,0 +1,39 @@
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.infoContainerRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoContainerRow > :last-child{
+    font-weight: bold;
+}
+
+.carContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+.carContainer :last-child{
+    margin-top: auto;
+}
+
+.carPhoto{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.price{
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 20px 10px 0;
+}
+

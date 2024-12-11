@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{2FC1B734-4F30-4B04-8E25-9111D29A66A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPC.Api", "Server\CPC.Api\CPC.Api.csproj", "{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPC.Models", "Server\CPC.Models\CPC.Models.csproj", "{D0F74261-CD3E-46C7-A146-09DB8DCD0274}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C9FEDD1-7509-45E3-8824-EF9971EA139C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		docker-compose.override.yml = docker-compose.override.yml
+		nginx.conf = nginx.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F74261-CD3E-46C7-A146-09DB8DCD0274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F74261-CD3E-46C7-A146-09DB8DCD0274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F74261-CD3E-46C7-A146-09DB8DCD0274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F74261-CD3E-46C7-A146-09DB8DCD0274}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFF2D6AE-C100-49D6-90D6-9C50BDD8DADF} = {2FC1B734-4F30-4B04-8E25-9111D29A66A1}
+		{D0F74261-CD3E-46C7-A146-09DB8DCD0274} = {2FC1B734-4F30-4B04-8E25-9111D29A66A1}
+	EndGlobalSection
+EndGlobal

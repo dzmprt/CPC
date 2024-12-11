@@ -1,0 +1,27 @@
+﻿services:
+  
+  cpc.api:
+    image: cpc.api
+    container_name: CpcApi
+    build:
+      context: .
+      dockerfile: Server/CPC.Api/Dockerfile
+    restart: unless-stopped
+  
+  next.js.client:
+    image: next.js.client
+    container_name: NextJsClient
+    build:
+      context: ClientNextJs/cars-app
+      dockerfile: Dockerfile
+    depends_on:
+      - cpc.api
+    restart: unless-stopped
+  
+  proxy:
+    image: nginx:mainline
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - cpc.api
+      - next.js.client

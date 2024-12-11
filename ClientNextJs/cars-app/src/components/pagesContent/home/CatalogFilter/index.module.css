@@ -1,0 +1,16 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formInput {
+  font-size: 16px;
+  padding: 2px;
+}
+
+.formLabel{
+  font-size: 24;
+  font-weight: bold;
+  text-align: center;
+}

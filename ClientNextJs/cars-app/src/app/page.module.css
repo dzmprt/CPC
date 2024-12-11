@@ -1,0 +1,11 @@
+.carsContainer{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.carsContainer > div{
+  flex-grow: 1;
+
+}
